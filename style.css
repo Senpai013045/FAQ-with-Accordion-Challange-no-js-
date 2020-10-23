@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --dfs: 1.3rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+}
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to left bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+.container {
+  width: 90%;
+  background-color: #ffffff;
+  margin: 15rem auto 5rem auto;
+  font-size: var(--dfs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+}
+.container_image > * {
+  display: block;
+  transform: translateY(-11rem);
+}
+.shadow {
+  margin-top: -9rem;
+  margin-left: 2rem;
+}
+.accordion {
+  margin-top: -8rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion_heading {
+  font-size: 3rem;
+  text-align: center;
+  color: hsl(237, 12%, 33%);
+}
+.accordion label {
+  display: block;
+  padding: 2rem 0;
+}
+.accordion label h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  /* color: hsl(237, 12%, 33%); */
+  color: hsl(240, 6%, 50%);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.accordion label p {
+  color: hsl(240, 6%, 50%);
+}
+.divider {
+  height: 0.1rem;
+  background-color: hsl(240, 5%, 91%);
+}
+.accordion input[type="radio"] {
+  display: none;
+}
+.accordion input[type="radio"]:checked + label h5 {
+  color: hsl(237, 12%, 33%);
+}
+.accordion input[type="radio"] + label h5 > img {
+  margin-left: auto;
+  transition: all 0.2s;
+}
+.accordion input[type="radio"]:checked + label h5 > img {
+  transform: rotate(180deg);
+}
+
+.accordion input[type="radio"] + label h5 + p {
+  transform-origin: 50% 50%;
+  transform: rotateX(90deg);
+  transition: all 0.5s;
+  height: 0rem;
+}
+.accordion input[type="radio"]:checked + label h5 + p {
+  transform: rotateX(0deg);
+  height: initial;
+}
+[class^="desktop_"] {
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  body {
+    height: 100vh;
+    /* overflow: hidden; */
+  }
+  .container {
+    flex-direction: row;
+    width: 70%;
+    width: 90rem;
+    margin-top: 10rem;
+    overflow: hidden;
+  }
+  .accordion {
+    margin: 0rem;
+    padding: 2rem 4rem;
+    flex: 1;
+  }
+  .accordion_heading {
+    text-align: left;
+  }
+  .container_image {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .accordion input[type="radio"] + label h5 > img {
+    margin-left: auto;
+  }
+  img.mobile {
+    display: none;
+  }
+  [class^="desktop_"] {
+    display: inline-block;
+    width: 40rem;
+    transform: translateX(-7rem);
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80rem;
+    margin: 0 auto;
+  }
+  .desktop_box {
+    position: absolute;
+    width: 12rem;
+    top: 43.5%;
+    left: 0.5rem;
+    z-index: 100;
+  }
+  .desktop_shadow {
+    margin-top: -30rem;
+  }
+}

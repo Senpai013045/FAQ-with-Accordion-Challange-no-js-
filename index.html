@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        src="images/illustration-box-desktop.svg"
+        class="desktop_box"
+        alt=""
+      />
+      <div class="container">
+        <div class="container_image">
+          <img
+            class="woman mobile"
+            src="images/illustration-woman-online-mobile.svg"
+            alt="woman"
+          />
+          <img
+            class="shadow mobile"
+            src="images/bg-pattern-mobile.svg"
+            alt="shadow"
+          />
+
+          <img
+            src="images/illustration-woman-online-desktop.svg"
+            alt=""
+            class="desktop_woman"
+          />
+          <img src="images/bg-pattern-desktop.svg" class="desktop_shadow" />
+        </div>
+        <div class="accordion">
+          <h2 class="accordion_heading">FAQ</h2>
+
+          <input type="radio" name="faq" value="1" id="one" />
+          <label for="one">
+            <h5>
+              How many team members can I invite?
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </h5>
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </label>
+          <div class="divider"></div>
+          <input type="radio" name="faq" value="2" id="two" />
+          <label for="two">
+            <h5>
+              What is the maximum file upload size?
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </h5>
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </label>
+          <div class="divider"></div>
+          <input type="radio" name="faq" value="3" id="three" />
+          <label for="three">
+            <h5>
+              How do I reset my password?
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </h5>
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </label>
+          <div class="divider"></div>
+          <input type="radio" name="faq" value="4" id="four" />
+          <label for="four">
+            <h5>
+              Can I cancel my subscription?
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </h5>
+            <p>
+              Yes! Send us a message and we’ll process your request no is
+              available 24/7. Phone lines are open during normal business hours.
+              questions asked.
+            </p>
+          </label>
+          <div class="divider"></div>
+          <input type="radio" name="faq" value="5" id="five" />
+          <label for="five">
+            <h5>
+              Do you provide additional support?
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </h5>
+            <p>Chat and email support</p>
+          </label>
+          <div class="divider"></div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.facebook.com/subham.shrestha.90">Subham Shrestha</a>.
+    </div>
+  </body>
+</html>
