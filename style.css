@@ -33,6 +33,7 @@ body {
   align-items: center;
   border-radius: 2rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
 }
 .container_image > * {
   display: block;
@@ -62,7 +63,6 @@ body {
   font-weight: 700;
   /* color: hsl(237, 12%, 33%); */
   color: hsl(240, 6%, 50%);
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
